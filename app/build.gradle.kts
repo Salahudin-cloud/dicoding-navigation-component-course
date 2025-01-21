@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -30,6 +31,9 @@ android {
             )
         }
     }
+
+
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -38,6 +42,7 @@ android {
         jvmTarget = "11"
     }
 }
+
 
 dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
